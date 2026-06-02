@@ -177,38 +177,18 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
-/* SVG brick mark */
-.brand-mark {
-  height: 32px;
+/* Real logo image */
+.brand-logo {
+  height: 36px;
   width: auto;
   display: block;
   flex-shrink: 0;
 }
-.brand-mark .brick-dark { fill: var(--graphite); }
-.brand-mark .brick-blue { fill: var(--blue); }
-
-/* Footer: invert bricks to white on dark bg */
-.site-footer .brand-mark .brick-dark { fill: rgba(255,255,255,0.85); }
-.site-footer .brand-mark .brick-blue { fill: var(--blue); }
-
-/* Wordmark */
-.brand-wordmark {
-  font-family: var(--font-head);
-  font-size: 1.15rem;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+/* Footer: make the dark logo white for dark background */
+.site-footer .brand-logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.88;
 }
-.brand-wordmark strong {
-  font-weight: 800;
-  color: var(--graphite);
-}
-.brand-wordmark .wm-group {
-  font-weight: 400;
-  color: var(--slate);
-}
-/* Footer wordmark colors */
-.site-footer .brand-wordmark strong { color: var(--white); }
-.site-footer .brand-wordmark .wm-group { color: rgba(255,255,255,0.55); }
 
 .nav-links {
   display: flex;
