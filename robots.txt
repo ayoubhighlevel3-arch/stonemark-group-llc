@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you.html
+Disallow: /thank-you-call.html
 
-Sitemap: https://rtvmedia-ar.com/sitemap.xml
+Sitemap: https://stonemarkgroupllc.com/sitemap.xml

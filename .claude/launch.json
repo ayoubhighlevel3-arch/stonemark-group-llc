@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "static",
+      "name": "stonemark",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "3456", "."],
-      "port": 3456
+      "runtimeArgs": ["serve", "-l", "4567", "/Users/ayoub/Desktop/stonemark-group-llc"],
+      "port": 4567
     }
   ]
 }

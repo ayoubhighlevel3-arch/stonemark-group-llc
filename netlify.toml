@@ -10,31 +10,11 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  for = "/community.html"
+  for = "/thank-you.html"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
 
 [[headers]]
-  for = "/community"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-
-[[headers]]
-  for = "/community-v2.html"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-
-[[headers]]
-  for = "/community-v2"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-
-[[headers]]
-  for = "/influencer-funnel.html"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-
-[[headers]]
-  for = "/influencer-funnel"
+  for = "/thank-you-call.html"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"

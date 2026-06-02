@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | RTV Media AR</title>
-  <meta name="description" content="Get in touch with the RTV Media AR team.">
-  
+  <title>Contact Us | Stonemark Group LLC</title>
+  <meta name="description" content="Contact Stonemark Group LLC for concrete coatings and flooring services in Seattle, Nashville, Charlotte, and Scottsdale.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="https://res.cloudinary.com/diptffkzh/image/upload/v1773663917/Gemini_Generated_Image_7td1lw7td1lw7td1-removebg-preview_1_dzterv.png">
 </head>
 <body>
 
@@ -18,7 +17,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1773663917/Gemini_Generated_Image_7td1lw7td1lw7td1-removebg-preview_1_dzterv.png" alt="RTV Media AR Logo" class="brand-logo-img">
+        <span class="brand-wordmark">Stone<span>mark</span> Group</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -27,7 +26,7 @@
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
-        <a href="book-a-call.html" class="btn btn-outline">Book a Call</a>
+        <a href="book-a-call.html" class="btn btn-outline">Free Estimate</a>
       </nav>
     </div>
   </header>
@@ -36,85 +35,114 @@
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow fade-up">GET IN TOUCH</span>
-      <h1 class="page-hero-title fade-up" data-delay="1">Let's talk <span>growth</span>.</h1>
-      <p class="page-hero-sub fade-up" data-delay="2">Have a question or want to see if we're a fit? Drop us a line.</p>
+      <h1 class="page-hero-title fade-up" data-delay="1">Let's talk about <span style="color: var(--amber-light);">your project</span>.</h1>
+      <p class="page-hero-sub fade-up" data-delay="2">Have a question or ready to get started? Send us a message and we'll respond within one business day.</p>
     </div>
   </section>
 
-  <!-- Main Content -->
   <main>
     <section class="section">
       <div class="container">
-        
         <div class="contact-grid fade-up">
+
           <!-- Form -->
           <div class="contact-form-wrapper">
             <header style="margin-bottom: 2rem;">
               <h2 class="section-title" style="font-size: 2rem; margin-bottom: 0.5rem;">Send a message</h2>
-              <p class="section-lead" style="font-size: 0.95rem;">Fill out the form and a revenue specialist will be in touch within 24 hours.</p>
+              <p class="section-lead" style="font-size: 0.95rem;">Fill out the form and our team will be in touch within one business day.</p>
             </header>
 
-            <form class="contact-form" action="/contact.html" method="POST" data-netlify="true" name="contact">
+            <form class="contact-form" action="/thank-you.html" method="POST" data-netlify="true" name="contact">
               <input type="hidden" name="form-name" value="contact">
               <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
               </div>
               <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Acme Corp" required>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
               </div>
               <div class="form-group">
-                <label for="email">Work Email</label>
-                <input type="email" id="email" name="email" placeholder="john@acme.com" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
               </div>
               <div class="form-group">
-                <label for="message">How can we help?</label>
-                <textarea id="message" name="message" placeholder="Tell us about your pipeline goals..." required></textarea>
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service...</option>
+                  <option value="concrete-coating">Concrete Coating / Epoxy</option>
+                  <option value="polyaspartic">Polyaspartic Coating</option>
+                  <option value="flooring">Flooring Installation</option>
+                  <option value="concrete-repair">Concrete Repair</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">How can we help? *</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project, location, and any questions you have..." required></textarea>
               </div>
               <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Send Message</button>
             </form>
           </div>
 
-          <!-- Info -->
-          <div class="contact-info-wrapper" style="background: var(--surface); padding: 3rem 2.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(10,27,42,0.07);">
-            <h3 style="font-family: var(--font-head); font-size: 1.5rem; color: var(--navy); margin-bottom: 2rem;">Contact Information</h3>
-            
+          <!-- Contact Info -->
+          <div class="contact-info-wrapper" style="background: var(--surface); padding: 3rem 2.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(28,25,23,0.07);">
+            <h3 style="font-family: var(--font-head); font-size: 1.5rem; color: var(--stone); margin-bottom: 2rem;">Contact Information</h3>
+
             <div class="contact-info">
               <div class="contact-info-item">
                 <div class="contact-info-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
                 <div>
                   <div class="contact-info-label">Email Us</div>
-                  <div class="contact-info-value">growth@rtvmedia-ar.com</div>
+                  <div class="contact-info-value"><a href="mailto:contact@stonemarkgroupllc.com" style="color:inherit;">contact@stonemarkgroupllc.com</a></div>
                 </div>
               </div>
-              
+
               <div class="contact-info-item">
                 <div class="contact-info-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div>
-                  <div class="contact-info-label">Call Us</div>
-                  <div class="contact-info-value"><a href="tel:+15618340099" style="color:inherit;">+1 (561) 834-0099</a></div>
+                  <div class="contact-info-label">Call or Text</div>
+                  <div class="contact-info-value"><a href="tel:+16516613255" style="color:inherit;">+1 (651) 661-3255</a></div>
                 </div>
               </div>
-              
+
               <div class="contact-info-item">
                 <div class="contact-info-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div>
                   <div class="contact-info-label">Registered Address</div>
                   <div class="contact-info-value">30 N Gould St Ste R<br>Sheridan, WY 82801, USA</div>
                 </div>
               </div>
-            </div>
-            
-          </div>
-        </div>
 
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Response Time</div>
+                  <div class="contact-info-value">Within 1 business day</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(28,25,23,0.08);">
+              <div class="contact-info-label" style="margin-bottom: 1rem;">Service Areas</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="background: rgba(217,119,6,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Seattle, WA</span>
+                <span style="background: rgba(217,119,6,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Nashville, TN</span>
+                <span style="background: rgba(217,119,6,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Charlotte, NC</span>
+                <span style="background: rgba(217,119,6,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Scottsdale, AZ</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
@@ -125,17 +153,17 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand">
-            <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1773663917/Gemini_Generated_Image_7td1lw7td1lw7td1-removebg-preview_1_dzterv.png" alt="RTV Media AR Logo" class="brand-logo-img">
+            <span class="brand-wordmark">Stone<span>mark</span> Group</span>
           </a>
-          <p class="footer-brand-desc">B2B marketing and lead generation services for growing businesses.</p>
+          <p class="footer-brand-desc">Professional concrete coatings and flooring installation for homes and businesses.</p>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Services</h4>
           <div class="footer-links">
-            <a href="services.html">Lead Generation</a>
-            <a href="services.html">Outsourced SDRs</a>
-            <a href="services.html">Sales Enablement</a>
-            <a href="services.html">Paid Ads</a>
+            <a href="services.html">Concrete Coatings</a>
+            <a href="services.html">Epoxy Floor Systems</a>
+            <a href="services.html">Flooring Installation</a>
+            <a href="services.html">Concrete Repair</a>
           </div>
         </div>
         <div class="footer-col">
@@ -143,7 +171,7 @@
           <div class="footer-links">
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact</a>
-            <a href="book-a-call.html">Book a Call</a>
+            <a href="book-a-call.html">Free Estimate</a>
           </div>
         </div>
         <div class="footer-col">
@@ -156,8 +184,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 RTV Media AR LLC. All rights reserved.</p>
-        <p style="margin-top:0.35rem; font-size:0.8rem; opacity:0.6;">30 N Gould St Ste R, Sheridan, WY 82801, USA</p>
+        <p>&copy; 2026 Stonemark Group LLC. All rights reserved.</p>
+        <p style="margin-top:0.35rem; font-size:0.8rem; opacity:0.6;">30 N Gould St Ste R, Sheridan, WY 82801, USA &nbsp;|&nbsp; <a href="tel:+16516613255" style="color:inherit;">+1 (651) 661-3255</a></p>
       </div>
     </div>
   </footer>
