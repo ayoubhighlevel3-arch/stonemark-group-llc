@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Stonemark Group LLC</title>
-  <meta name="description" content="Contact Stonemark Group LLC for concrete coatings and flooring services in Seattle, Nashville, Charlotte, and Scottsdale.">
+  <title>Contact Stonemark Group LLC | Home Improvement Services</title>
+  <meta name="description" content="Contact Stonemark Group LLC for professional home improvement services across the U.S.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,10 +70,14 @@
                 <label for="service">Service Interested In</label>
                 <select id="service" name="service">
                   <option value="">Select a service...</option>
-                  <option value="concrete-coating">Concrete Coating / Epoxy</option>
-                  <option value="polyaspartic">Polyaspartic Coating</option>
+                  <option value="concrete-coatings">Concrete Coatings &amp; Repair</option>
                   <option value="flooring">Flooring Installation</option>
-                  <option value="concrete-repair">Concrete Repair</option>
+                  <option value="kitchen-bath">Kitchen &amp; Bathroom Remodeling</option>
+                  <option value="painting-drywall">Painting, Drywall &amp; Interior Finishing</option>
+                  <option value="roofing-gutters">Roofing, Gutters &amp; Siding</option>
+                  <option value="windows-doors">Windows, Doors &amp; Exterior</option>
+                  <option value="decks-patios">Decks, Patios &amp; Outdoor Living</option>
+                  <option value="landscaping-fencing">Landscaping, Hardscaping &amp; Fencing</option>
                   <option value="other">Other / Not Sure</option>
                 </select>
               </div>
@@ -81,6 +85,16 @@
                 <label for="message">How can we help? *</label>
                 <textarea id="message" name="message" placeholder="Tell us about your project, location, and any questions you have..." required></textarea>
               </div>
+              <!-- Privacy & Contact Consent -->
+              <div class="checkbox-group" style="margin-top: 0.75rem;">
+                <input type="checkbox" id="privacy-consent" name="privacy-consent" value="agreed" required>
+                <label for="privacy-consent">
+                  I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a>, and consent to be contacted by Stonemark Group LLC regarding my inquiry. *
+                </label>
+              </div>
+              <p style="font-size: 0.78rem; color: #A8A29E; line-height: 1.5; margin-top: 0.75rem; text-align: center;">
+                Your phone number will be used for voice contact only. We will never sell your information. View our <a href="privacy-policy.html" target="_blank" style="color: var(--amber);">Privacy Policy</a>.
+              </p>
               <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Send Message</button>
             </form>
           </div>
@@ -131,15 +145,6 @@
               </div>
             </div>
 
-            <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(28,25,23,0.08);">
-              <div class="contact-info-label" style="margin-bottom: 1rem;">Service Areas</div>
-              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                <span style="background: rgba(44,111,181,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Seattle, WA</span>
-                <span style="background: rgba(44,111,181,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Nashville, TN</span>
-                <span style="background: rgba(44,111,181,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Charlotte, NC</span>
-                <span style="background: rgba(44,111,181,0.10); color: var(--amber-dark); border-radius: var(--radius-pill); padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;">Scottsdale, AZ</span>
-              </div>
-            </div>
           </div>
 
         </div>
@@ -155,15 +160,16 @@
           <a href="index.html" class="brand">
             <img src="logo.png" alt="Stonemark Group" class="brand-logo">
           </a>
-          <p class="footer-brand-desc">Professional concrete coatings and flooring installation for homes and businesses.</p>
+          <p class="footer-brand-desc">Full-service home improvement for residential and commercial properties across the U.S.</p>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Services</h4>
           <div class="footer-links">
-            <a href="services.html">Concrete Coatings</a>
-            <a href="services.html">Epoxy Floor Systems</a>
+            <a href="services.html">Concrete Coatings &amp; Repair</a>
             <a href="services.html">Flooring Installation</a>
-            <a href="services.html">Concrete Repair</a>
+            <a href="services.html">Kitchen &amp; Bathroom Remodeling</a>
+            <a href="services.html">Roofing, Gutters &amp; Siding</a>
+            <a href="services.html">Landscaping &amp; Fencing</a>
           </div>
         </div>
         <div class="footer-col">
@@ -179,13 +185,15 @@
           <div class="footer-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms-of-service.html">Terms of Service</a>
+            <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>
             <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="privacy-policy.html#california-rights">Your Privacy Choices (CA)</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Stonemark Group LLC. All rights reserved.</p>
-        <p style="margin-top:0.35rem; font-size:0.8rem; opacity:0.6;">30 N Gould St Ste R, Sheridan, WY 82801, USA &nbsp;|&nbsp; <a href="tel:+16516613255" style="color:inherit;">+1 (651) 661-3255</a></p>
+        <p>&copy; 2026 Stonemark Group LLC. All rights reserved. &nbsp;|&nbsp; <a href="privacy-policy.html#california-rights" style="color:inherit; opacity:0.75;">Your Privacy Choices (CA)</a></p>
+        <p style="margin-top:0.35rem; font-size:0.8rem; opacity:0.6;">Registered Agent Address: 30 N Gould St Ste R, Sheridan, WY 82801, USA &nbsp;|&nbsp; <a href="tel:+16516613255" style="color:inherit;">+1 (651) 661-3255</a> &nbsp;|&nbsp; <a href="mailto:contact@stonemarkgroupllc.com" style="color:inherit;">contact@stonemarkgroupllc.com</a></p>
       </div>
     </div>
   </footer>

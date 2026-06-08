@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
-                
+
                 // Close mobile menu if open
                 if (navLinks && navLinks.classList.contains('open')) {
                     navToggle.classList.remove('open');
@@ -74,4 +74,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ── Cookie Consent Banner ──
+    const COOKIE_KEY = 'stonemark_cookie_consent';
+    if (!localStorage.getItem(COOKIE_KEY)) {
+        const banner = document.createElement('div');
+        banner.className = 'cookie-banner';
+        banner.setAttribute('role', 'region');
+        banner.setAttribute('aria-label', 'Cookie consent');
+        banner.innerHTML = `
+            <p class="cookie-banner-text">
+                We use cookies to understand how visitors use our site. By clicking "Accept," you consent to our use of analytics cookies. Declining will not affect your access to any of our services.
+                <a href="cookie-policy.html">Cookie Policy</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn-decline" id="cookie-decline">Decline</button>
+                <button class="cookie-btn-accept" id="cookie-accept">Accept</button>
+            </div>
+        `;
+        document.body.appendChild(banner);
+        requestAnimationFrame(() => requestAnimationFrame(() => banner.classList.add('visible')));
+
+        banner.addEventListener('click', function(e) {
+            if (e.target.id === 'cookie-accept' || e.target.id === 'cookie-decline') {
+                localStorage.setItem(COOKIE_KEY, e.target.id === 'cookie-accept' ? 'accepted' : 'declined');
+                banner.classList.remove('visible');
+                setTimeout(() => banner.remove(), 400);
+            }
+        });
+    }
 });
